@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { ContactIcon, AboutIcon, WorkIcon, ProjectIcon, SkillIcon } from '../../Assets/Svg';
 import 'antd/dist/antd.css';
 import "./Navbar.css";
@@ -12,10 +12,22 @@ const { Header } = Layout;
 
 
 export const Navbar = () => {
-  const handleHover = (e) => {
-    // e.target.style.cursor = "none";
-    // e.target.style.color = "red";
-    e.target.style["border-bottom"] = "none";
+  const [navMenuTitleColor, setNavMenuTitleColor] = React.useState('#282a36')
+  const AboutRef = useRef(null);
+  const WorkRef = useRef(null);
+  const SkillRef = useRef(null);
+  const ProjectRef = useRef(null);
+  const ContactRef = useRef(null);
+  useEffect(() => {
+    AboutRef.current.props.style["backgroundColor"] = navMenuTitleColor;
+    WorkRef.current.props.style["backgroundColor"] = navMenuTitleColor;
+    SkillRef.current.props.style["backgroundColor"] = navMenuTitleColor;
+    ProjectRef.current.props.style["backgroundColor"] = navMenuTitleColor;
+    ContactRef.current.props.style["backgroundColor"] = navMenuTitleColor;
+  }, [navMenuTitleColor])
+
+  const handleClick = (e) => {
+    setNavMenuTitleColor('#282a36')
   };
 
 
@@ -34,11 +46,11 @@ export const Navbar = () => {
                 // backgroundColor: "#1f1f1f",
                 border: "none",
               }}>
-                <Menu.Item style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onMouseOver={handleHover}>About</Menu.Item>
-                <Menu.Item style={{ color: "white" }} key={'experience'} icon={<WorkIcon />} onMouseOver={handleHover}>Experience</Menu.Item>
-                <Menu.Item style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} onMouseOver={handleHover}>Skills</Menu.Item>
-                <Menu.Item style={{ color: "white" }} key={'projects'} icon={<ProjectIcon />} onMouseOver={handleHover}>Projects</Menu.Item>
-                <Menu.Item style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} onMouseOver={handleHover}>Contact Me</Menu.Item>
+                <Menu.Item ref={AboutRef} style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onClick={() => handleClick(AboutRef)}>About</Menu.Item>
+                <Menu.Item ref={WorkRef} style={{ color: "white" }} key={'experience'} icon={<WorkIcon />} onClick={() => handleClick(WorkRef)} >Experience</Menu.Item>
+                <Menu.Item ref={SkillRef} style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} onClick={() => handleClick(SkillRef)} >Skills</Menu.Item>
+                <Menu.Item ref={ProjectRef} style={{ color: "white" }} key={'projects'} icon={<ProjectIcon />} onClick={() => handleClick(ProjectRef)}>Projects</Menu.Item>
+                <Menu.Item ref={ContactRef} style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} onClick={() => handleClick(ContactRef)} >Contact Me</Menu.Item>
               </Menu>
             </Col>
             <Col xxl={1} xl={1} lg={1} xs={1} md={2} sm={1} />
@@ -46,21 +58,5 @@ export const Navbar = () => {
         </Header>
       </Layout>
     </>
-    // <>
-    //   <Steps
-    //     type="navigation"
-    //     current={currentState}
-    //     onChange={onChange}
-    //     initial={0}
-    //     direction="vertical"
-    //     className="site-navigation-steps"
-    //   >
-    //     <Step title="About" icon={<AboutIcon />} className="step"/>
-    //     <Step title="Experience" icon={<WorkIcon />} />
-    //     <Step title="Skills" icon={<SkillIcon />} />
-    //     <Step title="Projects" icon={<ProjectIcon />} />
-    //     <Step title="Contact Me" icon={<ContactIcon />} />
-    //   </Steps>
-    // </>
   );
 };

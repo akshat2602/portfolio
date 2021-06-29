@@ -3,7 +3,7 @@ import { Layout, Row, Col, Typography } from 'antd';
 const { Content } = Layout;
 const { Title } = Typography;
 
-export const Projects = () => {
+export const Work = () => {
     return (
         <>
             <Layout>
@@ -13,7 +13,7 @@ export const Projects = () => {
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div>
-                                    <Title>Projects</Title>
+                                    <Title>Work Experience</Title>
                                 </div>
                             </Col>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />

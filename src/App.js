@@ -4,6 +4,7 @@ import {Contact} from "./components/Contact/Contact";
 import {Navbar} from "./components/Navbar/Navbar";
 import {Projects} from "./components/Projects/Projects";
 import {Skills} from "./components/Skills/Skills";
+import {Work} from "./components/Work/Work";
 import './App.less';
 
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Landing />
       <About />
+      <Work />
       <Skills />
       <Projects />
       <Contact />

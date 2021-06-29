@@ -1,8 +1,5 @@
-import { Layout } from 'antd';
-import { Typography } from 'antd';
-import { Row, Col } from 'antd';
-import React from 'react';
-import { useEffect } from 'react';
+import { Layout, Row, Col, Typography } from 'antd';
+import React, { useEffect } from 'react';
 import TextTransition, { presets } from "react-text-transition";
 import './Landing.css';
 
@@ -11,8 +8,8 @@ const { Title } = Typography;
 
 const TEXTS = [
     "Student",
-    "Developer",
-    "Gamer",
+    "Full Stack Web Developer",
+    "Data Scientist"
 ];
 
 
@@ -37,9 +34,10 @@ export const Landing = () => {
                             <Col xxl={6} xl={6} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "left" }}>
                                 <div>
                                     <Title style={{ fontWeight: 300 }} className="title-tagline" level={1}> Hello there! <br /> I am <span style={{ fontWeight: 600 }}>Akshat Sharma</span> </Title>
-                                    <Title level={3} style={{ fontWeight: 400, display:'flex' }}>
+                                    <Title level={3} style={{ fontWeight: 400, display: 'flex' }}>
                                         <p>A &#8287;</p>
                                         <TextTransition
+                                            style={{ width: 500 }}
                                             text={TEXTS[index % TEXTS.length]}
                                             springConfig={presets.molasses}
                                         />
