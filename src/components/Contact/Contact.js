@@ -9,13 +9,17 @@ export const Contact = () => {
         <>
             <Layout>
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-                    <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+                    <div id="contact" className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
                         <Row>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div>
-                                    <Title level={1}>Let's get in touch...</Title>
-                                    <Title level={4}>You can reach out to me on any of these platforms!</Title>
+                                    <Title data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once level={1}>Let's get in touch...</Title>
+                                    <Title data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once level={4}>You can reach out to me on any of these platforms!</Title>
                                 </div>
                             </Col>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
@@ -26,24 +30,36 @@ export const Contact = () => {
                                 <div>
                                     <br />
                                     <br />
-                                    <a target="blank"
+                                    <a data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once
+                                        target="blank"
                                         rel="noreferrer"
                                         href="https://www.github.com/akshat2602">
                                         <GithubIcon />
                                     </a>
-                                    <a target="blank"
+                                    <a data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once
+                                        target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}
                                         href="https://www.linkedin.com/in/akshat-sharma-2602/">
                                         <LinkedinIcon />
                                     </a>
-                                    <a target="blank"
+                                    <a data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once
+                                        target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}
                                         href="mailto:akshatsharma2602@gmail.com">
                                         <EmailIcon />
                                     </a>
-                                    <a target="blank"
+                                    <a data-aos="zoom-out"
+data-aos-delay="200"
+data-aos-once
+                                        target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}
                                         href="https://www.instagram.com/_.st3llar._/">
