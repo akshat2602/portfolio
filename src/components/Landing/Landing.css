@@ -1,0 +1,14 @@
+.title-tagline {
+  margin-top: 30%;
+  /* font-weight: 600; */
+  /* margin-left: 10%; */
+}
+
+.landing-img {
+  width: 400px;
+  /* margin-right: 10%; */
+  margin-top: 13%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #6272a4;
+}
