@@ -16,6 +16,8 @@ module.exports = {
                             '@heading-color': '#6272a4',
                             '@text-selection-bg': '#44475a',
                             '@menu-item-color': '#44475a',
+                            '@card-background': '#44475a',
+                            '@card-skeleton-bg': '#44475a',
                             '@font-family': 'Roboto Slab, serif',
                         },
                         javascriptEnabled: true,

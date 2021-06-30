@@ -15,11 +15,11 @@ export const Contact = () => {
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div>
                                     <Title data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once level={1}>Let's get in touch...</Title>
+                                        data-aos-delay="200"
+                                        data-aos-once level={1}>Let's get in touch...</Title>
                                     <Title data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once level={4}>You can reach out to me on any of these platforms!</Title>
+                                        data-aos-delay="200"
+                                        data-aos-once level={4}>You can reach out to me on any of these platforms!</Title>
                                 </div>
                             </Col>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
@@ -31,16 +31,16 @@ data-aos-once level={4}>You can reach out to me on any of these platforms!</Titl
                                     <br />
                                     <br />
                                     <a data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once
+                                        data-aos-delay="200"
+                                        data-aos-once
                                         target="blank"
                                         rel="noreferrer"
                                         href="https://www.github.com/akshat2602">
                                         <GithubIcon />
                                     </a>
                                     <a data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once
+                                        data-aos-delay="200"
+                                        data-aos-once
                                         target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}
@@ -48,8 +48,8 @@ data-aos-once
                                         <LinkedinIcon />
                                     </a>
                                     <a data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once
+                                        data-aos-delay="200"
+                                        data-aos-once
                                         target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}
@@ -57,8 +57,8 @@ data-aos-once
                                         <EmailIcon />
                                     </a>
                                     <a data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once
+                                        data-aos-delay="200"
+                                        data-aos-once
                                         target="blank"
                                         rel="noreferrer"
                                         style={{ marginLeft: '8%' }}

@@ -2,13 +2,14 @@ import { Layout, Row, Col, Typography } from 'antd';
 import React, { useEffect } from 'react';
 import TextTransition, { presets } from "react-text-transition";
 import './Landing.css';
+import Akshat from './Akshat.webp';
 
 const { Content } = Layout;
 const { Title } = Typography;
 
 const TEXTS = [
     "Student",
-    "Full Stack Web Developer",
+    "Full Stack Developer",
     "Data Scientist"
 ];
 
@@ -22,7 +23,6 @@ export const Landing = () => {
             2000 // every 2 seconds
         );
         return () => clearTimeout(intervalId);
-
     }, [])
     return (
         <>
@@ -56,7 +56,7 @@ export const Landing = () => {
                                 <div>
                                     <img data-aos="zoom-out"
                                         data-aos-delay="200"
-                                        data-aos-once className="landing-img" alt="example" src="https://i.imgur.com/C1xqvid.png" />
+                                        data-aos-once className="landing-img" alt="akshat" src={Akshat} />
                                 </div>
                             </Col>
                         </Row>
