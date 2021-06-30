@@ -1,8 +1,7 @@
-import { About } from "./components/About/About";
+import { Work } from "./components/Work/Work";
 import { Landing } from "./components/Landing/Landing";
 import { Contact } from "./components/Contact/Contact";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
 import './App.less';
 import AOS from "aos";
@@ -19,9 +18,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Landing />
-      <About />
       <Skills />
-      <Projects />
+      <Work />
       <Contact />
     </div>
   );
