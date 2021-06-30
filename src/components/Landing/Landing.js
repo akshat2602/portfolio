@@ -33,14 +33,15 @@ export const Landing = () => {
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={6} xl={6} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "left" }}>
                                 <div data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once>
+                                    data-aos-delay="200"
+                                    data-aos-once>
                                     <Title data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once style={{ fontWeight: 300 }} className="title-tagline" level={1}> Hello there! <br /> I am <span style={{ fontWeight: 600 }}>Akshat Sharma</span> </Title>
+                                        data-aos-delay="200"
+                                        data-aos-once
+                                        style={{ fontWeight: 300 }} className="title-tagline" level={1}> Hello there! <br /> I am <span style={{ fontWeight: 600 }}>Akshat Sharma</span> </Title>
                                     <Title data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once level={3} style={{ fontWeight: 400, display: 'flex' }}>
+                                        data-aos-delay="200"
+                                        data-aos-once level={3} style={{ fontWeight: 400, display: 'flex' }}>
                                         <p>A &#8287;</p>
                                         <TextTransition
                                             style={{ width: 500 }}
@@ -54,8 +55,8 @@ data-aos-once level={3} style={{ fontWeight: 400, display: 'flex' }}>
                             <Col xxl={9} xl={9} lg={9}>
                                 <div>
                                     <img data-aos="zoom-out"
-data-aos-delay="200"
-data-aos-once className="landing-img" alt="example" src="https://i.imgur.com/UVcZDJH.jpg" />
+                                        data-aos-delay="200"
+                                        data-aos-once className="landing-img" alt="example" src="https://i.imgur.com/C1xqvid.png" />
                                 </div>
                             </Col>
                         </Row>
