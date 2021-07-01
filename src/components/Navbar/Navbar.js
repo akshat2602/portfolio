@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { ContactIcon, AboutIcon, ProjectIcon, SkillIcon } from '../../Assets/Svg';
+import React from "react";
+import { ContactIcon, AboutIcon, WorkIcon, SkillIcon } from '../../Assets/Svg';
 import 'antd/dist/antd.css';
 import "./Navbar.css";
 import { Row, Col, Layout, Menu, Typography } from 'antd';
@@ -12,23 +12,6 @@ const { Header } = Layout;
 
 
 export const Navbar = () => {
-  const [navMenuTitleColor, setNavMenuTitleColor] = React.useState('#282a36')
-  const AboutRef = useRef(null);
-  const SkillRef = useRef(null);
-  const ProjectRef = useRef(null);
-  const ContactRef = useRef(null);
-  useEffect(() => {
-    AboutRef.current.props.style["backgroundColor"] = navMenuTitleColor;
-    SkillRef.current.props.style["backgroundColor"] = navMenuTitleColor;
-    ProjectRef.current.props.style["backgroundColor"] = navMenuTitleColor;
-    ContactRef.current.props.style["backgroundColor"] = navMenuTitleColor;
-  }, [navMenuTitleColor])
-
-  const handleClick = (e) => {
-    setNavMenuTitleColor('#282a36')
-  };
-
-
   return (
     <>
       <Layout className="layout">
@@ -44,10 +27,11 @@ export const Navbar = () => {
                 // backgroundColor: "#1f1f1f",
                 border: "none",
               }}>
-                <Menu.Item ref={AboutRef} style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onClick={() => handleClick(AboutRef)}><a href="#about">About</a></Menu.Item>
-                <Menu.Item ref={SkillRef} style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} onClick={() => handleClick(SkillRef)}><a href="#skills">Skills</a></Menu.Item>
-                <Menu.Item ref={ProjectRef} style={{ color: "white" }} key={'projects'} icon={<ProjectIcon />} onClick={() => handleClick(ProjectRef)}><a href="#projects">Projects</a></Menu.Item>
-                <Menu.Item ref={ContactRef} style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} onClick={() => handleClick(ContactRef)}><a href="#contact">Contact Me</a></Menu.Item>
+                {/* <Menu.Item ref={AboutRef} style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onClick={() => handleClick(AboutRef)}><a href="#about">About</a></Menu.Item> */}
+                <Menu.Item style={{ color: "white" }} key={'home'} icon={<AboutIcon />} ><a href="/">Home</a></Menu.Item>
+                <Menu.Item style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} ><a href="#skills">Skills</a></Menu.Item>
+                <Menu.Item style={{ color: "white" }} key={'work'} icon={<WorkIcon />} ><a href="#work">Work</a></Menu.Item>
+                <Menu.Item style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} ><a href="#contact">Contact Me</a></Menu.Item>
               </Menu>
             </Col>
             <Col xxl={1} xl={1} lg={1} xs={1} md={2} sm={1} />
