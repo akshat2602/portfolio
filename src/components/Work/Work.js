@@ -60,6 +60,7 @@ export const Work = () => {
                                 return (<>
                                     <Col xxl={6} xl={6} lg={16} xs={20} md={18} sm={18}>
                                         <Card
+                                            key={data.title}
                                             data-aos="zoom-out"
                                             data-aos-delay="200"
                                             data-aos-once
