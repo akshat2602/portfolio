@@ -27,8 +27,8 @@ export const Landing = () => {
     return (
         <>
             <Layout>
-                <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-                    <div id="home" className="site-layout-background" style={{ padding: 24, minHeight: 640 }}>
+                <Content style={{ marginTop: 64 }}>
+                    <div id="home" style={{ minHeight: 750 }}>
                         <Row>
                             <Col xxl={3} xl={3} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={8} xl={8} lg={18} xs={20} md={18} sm={18}>
@@ -49,22 +49,12 @@ export const Landing = () => {
                                             springConfig={presets.molasses}
                                         />
                                     </Title>
-                                    <Title style={{ fontWeight: 300, textAlign: 'left', width: '75%' }} level={3}>I'm a Second Year Student from Pune Institute of Computer Technology, Pune, currently exploring Full Stack Web Development and Data Science.</Title>
-                                    {/* <Title level={2} style={{ textAlign: 'left' }}> Worked at</Title> */}
-                                    {/* <div style={{}}>
-                                        <a data-aos="zoom-out"
-                                            data-aos-delay="200"
-                                            data-aos-once target="blank"
-                                            rel="noreferrer" href="https://dataorc.in"><img alt="Dataorc" className="dataorc-img" src="https://storage.googleapis.com/dataorc_statics_ind/homepage/images/logo.png" /></a>
-                                        <a data-aos="zoom-out"
-                                            data-aos-delay="200"
-                                            data-aos-once target="blank"
-                                            rel="noreferrer" href="https://fossee.in"><img alt="FOSSEE" className="fossee-img" src="https://static.fossee.in/fossee/logos/FOSSEE_logo.png" /></a>
-                                    </div> */}
+                                    <Title style={{ fontWeight: 300, textAlign: 'left', width: '100%' }} level={3}>I'm a Second Year Student from Pune Institute of Computer Technology, Pune, currently exploring Full Stack Web Development and Data Science. I like watching anime and playing games in my spare time.</Title>
                                 </div>
                             </Col>
                             <Col xxl={1} xl={1} lg={7} xs={2} />
-                            <Col xxl={9} xl={9} lg={9}>
+                            <Col xxl={0} xl={0} lg={0} xs={2} md={3} sm={3} />
+                            <Col xxl={9} xl={9} lg={9} xs={2} md={3} sm={3}>
                                 <div>
                                     <img data-aos="zoom-out"
                                         data-aos-delay="200"

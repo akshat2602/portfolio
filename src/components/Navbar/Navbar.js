@@ -30,7 +30,7 @@ export const Navbar = () => {
                 {/* <Menu.Item ref={AboutRef} style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onClick={() => handleClick(AboutRef)}><a href="#about">About</a></Menu.Item> */}
                 <Menu.Item style={{ color: "white" }} key={'home'} icon={<AboutIcon />} ><a href="/">Home</a></Menu.Item>
                 <Menu.Item style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} ><a href="#skills">Skills</a></Menu.Item>
-                <Menu.Item style={{ color: "white" }} key={'work'} icon={<WorkIcon />} ><a href="#work">Work</a></Menu.Item>
+                <Menu.Item style={{ color: "white" }} key={'work'} icon={<WorkIcon />} ><a href="#work">Experience</a></Menu.Item>
                 <Menu.Item style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} ><a href="#contact">Contact Me</a></Menu.Item>
               </Menu>
             </Col>

@@ -14,11 +14,9 @@
   border-color: #6272a4;
 }
 
-.dataorc-img {
-  height: 100%;
-  width: 40%;
-}
-.fossee-img {
-  height: 100%;
-  width: 30%;
+@media screen and (max-width: 1180px) {
+  .landing-img {
+    width: 325px;
+    height: 300px;
+  }
 }

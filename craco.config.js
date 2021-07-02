@@ -21,6 +21,8 @@ module.exports = {
                             '@border-color-base': '#6272a4',
                             '@border-color-split': '#6272a4',
                             '@border-color-inverse': '#6272a4',
+                            '@descriptions-extra-color': '#6272a4',
+                            '@descriptions-bg': '#6272a4',
                         },
                         javascriptEnabled: true,
                     },

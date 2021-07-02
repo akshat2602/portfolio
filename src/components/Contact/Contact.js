@@ -8,8 +8,8 @@ export const Contact = () => {
     return (
         <>
             <Layout>
-                <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-                    <div id="contact" className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+                <Content style={{ marginTop: 64 }}>
+                    <div id="contact" style={{ minHeight: 400 }}>
                         <Row>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
