@@ -36,9 +36,9 @@ export const Work = () => {
                                             data-aos-delay="200"
                                             data-aos-once
                                             hoverable
-                                            style={{ marginTop: '10vh', borderWidth: 0, textAlign: "left" }}
+                                            style={{ marginTop: '10vh', borderWidth: 0, textAlign: 'justify' }}
                                             loading={false}
-                                            cover={<img src={data.logo} alt="logo" style={{ width: 300, marginLeft: '5%', marginTop: '10%' }} />}
+                                            cover={<img src={data.logo} alt="logo" className="companyLogo" />}
                                         >
                                             <Meta
                                                 title={<h2>{data.title}</h2>}

@@ -1,0 +1,12 @@
+.companyLogo {
+    width: 1000px;
+    margin-left: 17%;
+}
+
+@media screen and (max-width: 1180px) {
+    .companyLogo {
+      width: 200px;
+      margin-left: 30%;
+    }
+  }
+  

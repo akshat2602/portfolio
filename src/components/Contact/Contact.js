@@ -1,14 +1,14 @@
-import { Layout, Row, Col, Typography, BackTop } from 'antd';
+import { Layout, Row, Col, Typography, BackTop, Tooltip } from 'antd';
 import { GithubIcon, LinkedinIcon, EmailIcon, InstaIcon, GoUpIcon } from '../../Assets/Svg';
 
 const { Content, Footer } = Layout;
 const { Title } = Typography;
 
 const style = {
-    height: 30,
-    width: 30,
+    height: 36,
+    width: 36,
     lineHeight: '40px',
-    borderRadius: 15,
+    borderRadius: 18,
     backgroundColor: '#6272a4',
     color: '#282a36',
     textAlign: 'center',
@@ -23,9 +23,11 @@ export const Contact = () => {
     return (
         <>
             <Layout>
-                <BackTop onClick={upButtonOnClick}>
-                    <div style={style}> <GoUpIcon /> </div>
-                </BackTop>
+                <Tooltip title="Go Up" color={'#6272a4'} key={'#6272a4'}>
+                    <BackTop onClick={upButtonOnClick}>
+                        <div style={style}> <GoUpIcon /> </div>
+                    </BackTop>
+                </Tooltip>
                 <Content style={{ marginTop: 64 }}>
                     <div id="contact" style={{ minHeight: 400 }}>
                         <Row>
