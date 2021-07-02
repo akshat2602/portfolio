@@ -14,7 +14,7 @@ export const Projects = () => {
         <>
             <Layout>
                 <Content style={{ marginTop: 64 }}>
-                    <div id="projects" style={{ minHeight: 750 }}>
+                    <div id="projects" style={{ minHeight: 500 }}>
                         <Row>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
@@ -28,7 +28,7 @@ export const Projects = () => {
                             <Col xxl={3} xl={3} lg={4} xs={3} md={3} sm={3} />
                             {projects.map(data => {
                                 return (<>
-                                    <Col xxl={6} xl={6} lg={16} xs={18} md={18} sm={18}>
+                                    <Col xxl={9} xl={9} lg={8} xs={18} md={18} sm={18}>
                                         <Card
                                             key={data.title}
                                             data-aos="zoom-out"
@@ -44,8 +44,9 @@ export const Projects = () => {
                                                     description={<h2><b>{data.description}</b></h2>}
                                                 />
                                                 <h3>{data.content}</h3>
+                                                <h3><a target="blank"
+                                                    rel="noreferrer" style={{ color: "#bd93f9" }} href={data.href}>Github Link : {data.href}</a></h3>
                                             </div>
-
                                         </Card>
                                     </Col>
                                     <Col xxl={0} xl={0} lg={0} xs={3} md={3} sm={3} />

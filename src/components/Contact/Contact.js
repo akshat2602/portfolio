@@ -56,6 +56,7 @@ export const Contact = () => {
                                         data-aos-once
                                         target="blank"
                                         rel="noreferrer"
+                                        className='logos'
                                         href="https://www.github.com/akshat2602">
                                         <GithubIcon />
                                     </a>
@@ -64,6 +65,7 @@ export const Contact = () => {
                                         data-aos-once
                                         target="blank"
                                         rel="noreferrer"
+                                        className='logos'
                                         style={{ marginLeft: '8%' }}
                                         href="https://www.linkedin.com/in/akshat-sharma-2602/">
                                         <LinkedinIcon />
@@ -73,6 +75,7 @@ export const Contact = () => {
                                         data-aos-once
                                         target="blank"
                                         rel="noreferrer"
+                                        className='logos'
                                         style={{ marginLeft: '8%' }}
                                         href="mailto:akshatsharma2602@gmail.com">
                                         <EmailIcon />
@@ -82,6 +85,7 @@ export const Contact = () => {
                                         data-aos-once
                                         target="blank"
                                         rel="noreferrer"
+                                        className='logos'
                                         style={{ marginLeft: '8%' }}
                                         href="https://www.instagram.com/_.st3llar._/">
                                         <InstaIcon />
