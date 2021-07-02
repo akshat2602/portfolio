@@ -3,6 +3,7 @@ import { Landing } from "./components/Landing/Landing";
 import { Contact } from "./components/Contact/Contact";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Skills } from "./components/Skills/Skills";
+import { Projects } from "./components/Projects/Projects";
 import './App.less';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Landing />
       <Skills />
+      <Projects />
       <Work />
       <Contact />
     </div>

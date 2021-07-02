@@ -8,8 +8,8 @@ export const Skills = () => {
     return (
         <>
             <Layout>
-                <Content  style={{ marginTop: 64 }}>
-                    <div id="skills"  style={{ minHeight: 750 }}>
+                <Content style={{ marginTop: 64 }}>
+                    <div id="skills" style={{ minHeight: 750 }}>
                         <Row>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>

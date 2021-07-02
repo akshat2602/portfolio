@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactIcon, AboutIcon, WorkIcon, SkillIcon } from '../../Assets/Svg';
+import { ContactIcon, AboutIcon, WorkIcon, SkillIcon, ProjectIcon2 } from '../../Assets/Svg';
 import 'antd/dist/antd.css';
 import "./Navbar.css";
 import { Row, Col, Layout, Menu, Typography } from 'antd';
@@ -12,6 +12,7 @@ const { Header } = Layout;
 
 
 export const Navbar = () => {
+  // eslint-disable-next-line
   return (
     <>
       <Layout className="layout">
@@ -19,17 +20,18 @@ export const Navbar = () => {
           <Row style={{ height: "100%" }}>
             <Col xxl={3} xl={3} lg={3} xs={1} md={2} sm={1} />
             <Col xxl={20} xl={20} lg={20} xs={22} md={20} sm={22}>
-              <Title level={2} style={{ float: "left", marginTop: '1%', fontWeight: 400 }}><a style={{ color: '#6272a4', textDecoration: 'none' }} href="/">Akshat Sharma</a></Title>
+              {// eslint-disable-next-line 
+                <Title level={2} style={{ float: "left", marginTop: '1%', fontWeight: 400 }}><a style={{ color: '#6272a4', textDecoration: 'none' }} href="#">Akshat Sharma</a></Title>}
               <Menu theme="dark" mode="horizontal" style={{
                 float: 'right',
-                width: "40%",
+                width: "55%",
                 textAlign: "right",
-                // backgroundColor: "#1f1f1f",
                 border: "none",
               }}>
-                {/* <Menu.Item ref={AboutRef} style={{ color: "white" }} key={'about'} icon={<AboutIcon />} onClick={() => handleClick(AboutRef)}><a href="#about">About</a></Menu.Item> */}
-                <Menu.Item style={{ color: "white" }} key={'home'} icon={<AboutIcon />} ><a href="/">Home</a></Menu.Item>
+                {// eslint-disable-next-line
+                  <Menu.Item style={{ color: "white" }} key={'home'} icon={<AboutIcon />} ><a href="#">Home</a></Menu.Item>}
                 <Menu.Item style={{ color: "white" }} key={'skills'} icon={<SkillIcon />} ><a href="#skills">Skills</a></Menu.Item>
+                <Menu.Item style={{ color: "white" }} key={'projects'} icon={<ProjectIcon2 />} ><a href="#projects">Projects</a></Menu.Item>
                 <Menu.Item style={{ color: "white" }} key={'work'} icon={<WorkIcon />} ><a href="#work">Experience</a></Menu.Item>
                 <Menu.Item style={{ color: "white" }} key={'contact'} icon={<ContactIcon />} ><a href="#contact">Contact Me</a></Menu.Item>
               </Menu>

@@ -35,6 +35,73 @@ const WorkSvg = () => {
 };
 
 
+const ProjectSvg2 = () => {
+    return (
+        <>
+            <svg version="1.1" id="Layer_1" fill="#6272a4" width="24" height="24" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                viewBox="0 0 512 512">
+                <g>
+                    <g>
+                        <path d="M194.007,99.902l-6.69-37.463H0v387.122h512V99.902H194.007z M474.537,412.098H37.463V99.902h118.488l1.176,6.585
+			l5.513,30.879h31.366h280.53V412.098z"/>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <rect x="274.732" y="199.805" width="37.463" height="149.854" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <rect x="349.659" y="224.781" width="37.463" height="124.878" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <rect x="199.805" y="249.756" width="37.463" height="99.902" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <rect x="124.878" y="212.293" width="37.463" height="137.366" />
+                    </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+            </svg>
+
+        </>
+    )
+};
+
 
 const SkillSvg = () => {
     return (
@@ -110,14 +177,25 @@ const ReactSvg = () => {
 };
 
 
+const GoUpSvg = () => {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#282a36" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg>
+        </>
+    )
+}
+
+
 export const ContactIcon = props => <Icon component={ContactSvg} {...props} />;
 export const AboutIcon = props => <Icon component={AboutSvg} {...props} />;
 export const ProjectIcon = props => <Icon component={ProjectSvg} {...props} />;
 export const SkillIcon = props => <Icon component={SkillSvg} {...props} />;
 export const WorkIcon = props => <Icon component={WorkSvg} {...props} />;
+export const ProjectIcon2 = props => <Icon component={ProjectSvg2} {...props} />;
 export const GithubIcon = props => <Icon component={GithubSvg} {...props} />;
 export const LinkedinIcon = props => <Icon component={LinkedinSvg} {...props} />;
 export const EmailIcon = props => <Icon component={EmailSvg} {...props} />;
 export const InstaIcon = props => <Icon component={InstaSvg} {...props} />;
 export const DjangoIcon = props => <Icon component={DjangoSvg} {...props} />;
 export const ReactIcon = props => <Icon component={ReactSvg} {...props} />;
+export const GoUpIcon = props => <Icon component={GoUpSvg} {...props} />;
