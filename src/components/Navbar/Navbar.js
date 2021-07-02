@@ -21,7 +21,7 @@ export const Navbar = () => {
             <Col xxl={3} xl={3} lg={3} xs={1} md={2} sm={1} />
             <Col xxl={20} xl={20} lg={20} xs={22} md={20} sm={22}>
               {// eslint-disable-next-line 
-                <Title level={2} style={{ float: "left", marginTop: '1%', fontWeight: 400 }}><a style={{ color: '#6272a4', textDecoration: 'none' }} href="#">Akshat Sharma</a></Title>}
+                <Title className="site-title" level={2}><a style={{ color: '#6272a4', textDecoration: 'none' }} href="#">Akshat Sharma</a></Title>}
               <Menu theme="dark" mode="horizontal" style={{
                 float: 'right',
                 width: "55%",

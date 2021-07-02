@@ -23,6 +23,7 @@ module.exports = {
                             '@border-color-inverse': '#6272a4',
                             '@descriptions-extra-color': '#6272a4',
                             '@descriptions-bg': '#6272a4',
+                            '@tooltip-color': '#282a36',
                         },
                         javascriptEnabled: true,
                     },

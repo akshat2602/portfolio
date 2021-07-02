@@ -6,3 +6,15 @@
   float: right;
   margin: 16px 0 16px 24px;
 }
+
+.site-title {
+  float: left;
+  margin-top: 1%;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 675px) {
+  .site-title {
+    font-size: 1px;
+  }
+}

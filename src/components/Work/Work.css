@@ -1,12 +1,23 @@
 .companyLogo {
-    width: 1000px;
-    margin-left: 17%;
+  width: 350px;
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1180px) {
-    .companyLogo {
-      width: 200px;
-      margin-left: 30%;
-    }
+.workCard {
+  margin-top: "10vh";
+  align-content: "center";
+  min-height: 575px;
+}
+
+@media screen and (max-width: 1190px) {
+  .workCard {
+    min-height: 250px;
   }
-  
+}
+
+@media screen and (max-width: 1550px) {
+  .companyLogo {
+    width: 250px;
+    margin-left: 5%;
+  }
+}

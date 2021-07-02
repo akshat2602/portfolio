@@ -1,0 +1,11 @@
+.projectCard {
+  margin-top: "10vh";
+  align-content: "center";
+  min-height: 250px;
+}
+
+@media screen and (max-width: 1190px) {
+  .projectCard {
+    min-height: 150px;
+  }
+}

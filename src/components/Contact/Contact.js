@@ -13,6 +13,7 @@ const style = {
     color: '#282a36',
     textAlign: 'center',
     fontSize: 14,
+    font: 'Roboto Slab',
 };
 
 
@@ -23,7 +24,7 @@ export const Contact = () => {
     return (
         <>
             <Layout>
-                <Tooltip title="Go Up" color={'#6272a4'} key={'#6272a4'}>
+                <Tooltip title="Go Up" style={{ fontWeight: 600 }} color={'#6272a4'} key={'#6272a4'}>
                     <BackTop onClick={upButtonOnClick}>
                         <div style={style}> <GoUpIcon /> </div>
                     </BackTop>
