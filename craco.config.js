@@ -24,6 +24,8 @@ module.exports = {
                             '@descriptions-extra-color': '#6272a4',
                             '@descriptions-bg': '#6272a4',
                             '@tooltip-color': '#282a36',
+                            '@btn-primary-bg': '#6272a4',
+                            '@btn-link-hover-bg': '#44475a',
                         },
                         javascriptEnabled: true,
                     },

@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <>
       <Layout className="layout">
-        <Header>
+        <Header style={{ padding: 0, margin: 0 }}>
           <Row style={{ height: "100%" }}>
             <Col xxl={2} xl={2} lg={2} xs={0} md={2} sm={1} />
             <Col xxl={20} xl={20} lg={20} xs={24} md={20} sm={22}>
@@ -23,8 +23,9 @@ export const Navbar = () => {
                 <a href="#"><h1 className="site-title">Akshat Sharma</h1></a>}
               <Menu theme="dark" mode="horizontal" className="nav" style={{
                 float: 'right',
-                textAlign: "right",
-                border: "none",
+                textAlign: 'right',
+                border: 'none',
+                width: '50%'
               }}>
                 {// eslint-disable-next-line
                   <Menu.Item className="nav-items" key={'home'} icon={<AboutIcon />} ><a href="#">Home</a></Menu.Item>}

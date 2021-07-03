@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, Card } from 'antd';
+import { Layout, Row, Col, Typography, Card, Button } from 'antd';
 import './Projects.css';
 import { projects } from './projectData';
 
@@ -25,10 +25,10 @@ export const Projects = () => {
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                         </Row>
                         <Row>
-                            <Col xxl={3} xl={3} lg={4} xs={3} md={3} sm={3} />
+                            <Col xxl={3} xl={3} lg={4} xs={1} md={3} sm={3} />
                             {projects.map(data => {
                                 return (<>
-                                    <Col xxl={9} xl={9} lg={8} xs={18} md={18} sm={18}>
+                                    <Col xxl={9} xl={9} lg={8} xs={22} md={18} sm={18}>
                                         <Card
                                             key={data.title}
                                             data-aos="zoom-out"
@@ -44,13 +44,16 @@ export const Projects = () => {
                                                     description={<h2><b>{data.description}</b></h2>}
                                                 />
                                                 <h3>{data.content}</h3>
-                                                <h3><a target="blank"
-                                                    rel="noreferrer" style={{ color: "#bd93f9" }} href={data.href}>Github Link : {data.href}</a></h3>
+                                                <Button type="primary" shape="round" size='large' href={data.href}>
+                                                    Visit Github/Website
+                                                </Button>
+                                                {/* <h3><a target="blank"
+                                                    rel="noreferrer" style={{ color: "#bd93f9" }} href={data.href}>Github Link : {data.href}</a></h3> */}
                                             </div>
                                         </Card>
                                     </Col>
-                                    <Col xxl={0} xl={0} lg={0} xs={3} md={3} sm={3} />
-                                    <Col xxl={0} xl={0} lg={0} xs={3} md={3} sm={3} />
+                                    <Col xxl={0} xl={0} lg={0} xs={1} md={3} sm={3} />
+                                    <Col xxl={0} xl={0} lg={0} xs={1} md={3} sm={3} />
                                 </>)
                             })}
                         </Row>
