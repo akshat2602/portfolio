@@ -47,9 +47,9 @@ export const Skills = () => {
                                     style={{ borderWidth: 0, borderRadius: 12, marginTop: '5%' }}>
                                     <Title style={{ textAlign: 'center' }} level={3}>Frameworks/Libraries</Title>
                                     <br />
+                                    <FlaskIcon />
                                     <DjangoIcon />
                                     <ReactIcon />
-                                    <FlaskIcon />
                                     <TensorflowIcon />
                                     <PytorchIcon />
                                 </Card>

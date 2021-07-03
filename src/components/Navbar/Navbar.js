@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactIcon, AboutIcon, WorkIcon, SkillIcon, ProjectIcon2 } from '../../Assets/Svg';
+import { ContactIcon, WorkIcon, SkillIcon, ProjectIcon2, ResumeIcon } from '../../Assets/Svg';
 import 'antd/dist/antd.css';
 import "./Navbar.css";
 import { Row, Col, Layout, Menu } from 'antd';
@@ -27,12 +27,14 @@ export const Navbar = () => {
                 border: 'none',
                 width: '50%'
               }}>
-                {// eslint-disable-next-line
-                  <Menu.Item className="nav-items" key={'home'} icon={<AboutIcon />} ><a href="#">Home</a></Menu.Item>}
+                {/* {// eslint-disable-next-line
+                  <Menu.Item className="nav-items" key={'home'} icon={<AboutIcon />} ><a href="#">Home</a></Menu.Item>} */}
                 <Menu.Item className="nav-items" key={'skills'} icon={<SkillIcon />} ><a href="#skills">Skills</a></Menu.Item>
                 <Menu.Item className="nav-items" key={'work'} icon={<WorkIcon />} ><a href="#work">Experience</a></Menu.Item>
                 <Menu.Item className="nav-items" key={'projects'} icon={<ProjectIcon2 />} ><a href="#projects">Projects</a></Menu.Item>
                 <Menu.Item className="nav-items" key={'contact'} icon={<ContactIcon />} ><a href="#contact">Contact Me</a></Menu.Item>
+                <Menu.Item className="nav-items" key={'contact'} icon={<ResumeIcon />} ><a target="blank"
+                  rel="noreferrer" href="https://drive.google.com/file/d/1z-__YA55_I1YHmw-8zAYYO1kP9j41Elp/view?usp=sharing">Resume</a></Menu.Item>
               </Menu>
             </Col>
             <Col xxl={2} xl={2} lg={2} xs={0} md={2} sm={1} />
