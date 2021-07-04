@@ -26,6 +26,7 @@ module.exports = {
                             '@tooltip-color': '#282a36',
                             '@btn-primary-bg': '#6272a4',
                             '@btn-link-hover-bg': '#44475a',
+                            '@card-actions-background': '#282a36',
                         },
                         javascriptEnabled: true,
                     },
