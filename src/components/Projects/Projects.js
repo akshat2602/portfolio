@@ -6,7 +6,6 @@ import { projects } from './projectData';
 
 const { Content } = Layout;
 const { Title } = Typography;
-const { Meta } = Card;
 
 
 export const Projects = () => {
@@ -39,10 +38,12 @@ export const Projects = () => {
                                             style={{ borderWidth: 0 }}
                                             loading={false}>
                                             <div style={{ textAlign: 'left', color: '#6272a4', wordWrap: 'break-word' }}>
-                                                <Meta
+                                                {/* <Meta
                                                     title={<h1><b>{data.title}</b></h1>}
                                                     description={<h2><b>{data.description}</b></h2>}
-                                                />
+                                                /> */}
+                                                <h1><b>{data.title}</b></h1>
+                                                <h2><b>{data.description}</b></h2>
                                                 <h3>{data.content}</h3>
                                                 <Button type="primary" shape="round" size='large' href={data.href}>
                                                     Visit Github/Website

@@ -1,38 +1,25 @@
 .site-title {
   float: left;
-  /* margin-top: 1%; */
   font-weight: 400;
   font-size: 30px;
   color: "#6272a4";
   text-decoration: "none";
+  margin-left: 5%;
 }
 @media screen and (max-width: 1286px) {
   .nav-items {
     font-size: 14px;
   }
-  /* .nav {
-    width: 60%;
-  } */
-  .site-title {
-    font-size: 16px;
-  }
 }
 @media screen and (max-width: 500px) {
-  /* .nav {
-    width: 60%;
-    margin-right: 10%; 
-  } */
   .nav-items {
     font-size: 14px;
   }
-  .site-title {
-    font-size: 12px;
+  .site-title{
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 420px) {
-  /* .nav {
-    width: 75%;
-  } */
   .site-title {
     font-size: 0px;
   }

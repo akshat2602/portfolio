@@ -6,7 +6,6 @@ import { work } from './workData';
 
 const { Content } = Layout;
 const { Title } = Typography;
-const { Meta } = Card;
 
 
 export const Work = () => {
@@ -41,10 +40,8 @@ export const Work = () => {
                                             loading={false}>
                                             <img src={data.logo} alt="logo" className="companyLogo" style={{ alignContent: 'center' }} />
                                             <div style={{ textAlign: 'left', color: '#6272a4', wordWrap: 'break-word' }}>
-                                                <Meta
-                                                    title={<h1><b>{data.title}</b></h1>}
-                                                    description={<h2 style={{ whiteSpace: 'break-spaces' }}><b>{data.description}</b></h2>}
-                                                />
+                                                <h1><b>{data.title}</b></h1>
+                                                <h2>{data.description}</h2>
                                                 <h3>{data.content}</h3>
                                                 <Button type="primary" shape="round" size='large' href={data.href}>
                                                     Visit Github/Website
