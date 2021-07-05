@@ -59,7 +59,7 @@ export const Work = () => {
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div style={{ marginTop: '5%' }}>
-                                    <Title data-aos="zoom-out" data-aos-delay="200" data-aos-once>What do my mentors say</Title>
+                                    <Title data-aos="zoom-out" data-aos-delay="200" data-aos-once>Recommendations</Title>
                                 </div>
                             </Col>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
