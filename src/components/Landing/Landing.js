@@ -32,15 +32,13 @@ export const Landing = () => {
                         <Row>
                             <Col xxl={3} xl={3} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={8} xl={8} lg={18} xs={20} md={18} sm={18}>
-                                <div data-aos="zoom-out"
-                                    data-aos-delay="200"
-                                    data-aos-once>
+                                <div>
                                     <Title data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once
                                         style={{ fontWeight: 300, textAlign: 'left' }} className="title-tagline" level={1}> Hello there! <br /> I am <span style={{ fontWeight: 600 }}>Akshat Sharma</span> </Title>
                                     <Title data-aos="zoom-out"
-                                        data-aos-delay="200"
+                                        data-aos-delay="500"
                                         data-aos-once level={3} style={{ fontWeight: 400, display: 'flex' }}>
                                         <p>A</p>
                                         <TextTransition
@@ -49,7 +47,10 @@ export const Landing = () => {
                                             springConfig={presets.molasses}
                                         />
                                     </Title>
-                                    <Title style={{ fontWeight: 300, textAlign: 'left', width: '100%' }} level={3}>I'm a Second Year Student from Pune Institute of Computer Technology, Pune, currently exploring Full Stack Web Development and Data Science. I like watching anime and playing games in my spare time.</Title>
+                                    <Title data-aos="zoom-out"
+                                        data-aos-delay="700"
+                                        data-aos-once
+                                        style={{ fontWeight: 300, textAlign: 'left', width: '100%' }} level={3}>I'm a Second Year Student from Pune Institute of Computer Technology, Pune, currently exploring Full Stack Web Development and Data Science. I like watching anime and playing games in my spare time.</Title>
                                 </div>
                             </Col>
                             <Col xxl={1} xl={1} lg={7} xs={2} />
@@ -57,7 +58,7 @@ export const Landing = () => {
                             <Col xxl={9} xl={9} lg={9} xs={2} md={3} sm={3}>
                                 <div>
                                     <img data-aos="zoom-out"
-                                        data-aos-delay="200"
+                                        data-aos-delay="700"
                                         data-aos-once className="landing-img" alt="akshat" src={Akshat} />
                                 </div>
                             </Col>
