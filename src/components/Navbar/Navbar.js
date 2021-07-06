@@ -3,6 +3,7 @@ import { ContactIcon, WorkIcon, SkillIcon, ProjectIcon2, ResumeIcon } from '../.
 import 'antd/dist/antd.css';
 import "./Navbar.css";
 import { Row, Col, Layout, Menu } from 'antd';
+import ASLogo from '../../Assets/ASlogo.png';
 
 
 
@@ -18,9 +19,11 @@ export const Navbar = () => {
         <Header style={{ padding: 0, margin: 0 }}>
           <Row style={{ height: "100%" }}>
             <Col xxl={2} xl={2} lg={2} xs={0} md={2} sm={1} />
-            <Col xxl={20} xl={20} lg={20} xs={24} md={20} sm={22}>
-              {// eslint-disable-next-line 
-                <a href="#"><h1 className="site-title">Akshat Sharma</h1></a>}
+            <Col xxl={20} xl={20} lg={20} xs={24} md={20} sm={22} style={{ textAlign: 'left' }}>
+              {// eslint-disable-next-line
+                <a href="#"><img className="site-title" src={ASLogo} alt="aslogo" /></a>
+              }
+              
               <Menu theme="dark" mode="horizontal" className="nav" style={{
                 float: 'right',
                 textAlign: 'right',

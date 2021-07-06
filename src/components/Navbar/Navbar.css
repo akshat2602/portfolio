@@ -1,10 +1,7 @@
 .site-title {
-  float: left;
-  font-weight: 400;
-  font-size: 30px;
-  color: "#6272a4";
   text-decoration: "none";
   margin-left: 5%;
+  width: 64px;
 }
 @media screen and (max-width: 1286px) {
   .nav-items {
