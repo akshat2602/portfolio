@@ -42,9 +42,9 @@ export const Landing = () => {
                                     <Title data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once level={3} style={{ fontWeight: 400, display: 'flex' }}>
-                                        <p>A &#8287;</p>
+                                        <p>A</p>
                                         <TextTransition
-                                            style={{ width: 500, textAlign: 'left' }}
+                                            style={{ width: 500, textAlign: 'left', marginLeft: 8 }}
                                             text={TEXTS[index % TEXTS.length]}
                                             springConfig={presets.molasses}
                                         />
