@@ -3,22 +3,22 @@
   margin-bottom: 30px;
 }
 
-.workCard {
+/* .workCard {
   margin-top: "10vh";
   align-content: "center";
   min-height: 575px;
-}
+} */
 
-.testimonialCard{
+.testimonialCard {
   margin-top: "10vh";
   align-content: "center";
 }
 
-@media screen and (max-width: 1190px) {
+/* @media screen and (max-width: 1190px) {
   .workCard {
     min-height: 250px;
   }
-}
+} */
 
 @media screen and (max-width: 1550px) {
   .companyLogo {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, Card, Button } from 'antd';
+import { Layout, Row, Col, Typography, Card } from 'antd';
 import './Work.css';
 import { work } from './workData';
 import Bitglaze from '../../Assets/Bitglaze.png';
@@ -39,15 +39,11 @@ export const Work = () => {
                                             className="workCard"
                                             style={{ borderWidth: 0 }}
                                             loading={false}>
-                                            <img src={data.logo} alt="logo" className="companyLogo" style={{ alignContent: 'center' }} />
-                                            <div style={{ textAlign: 'left', color: '#6272a4', wordWrap: 'break-word' }}>
-                                                <h1><b>{data.title}</b></h1>
-                                                <h2>{data.description}</h2>
-                                                <h3>{data.content}</h3>
-                                                <Button type="primary" shape="round" size='large' href={data.href}>
-                                                    Visit Github/Website
-                                                </Button>
-                                            </div>
+                                            <a href={data.href}
+                                                target="blank"
+                                                rel="noreferrer">
+                                                <img src={data.logo} alt="logo" className="companyLogo" style={{ alignContent: 'center' }} />
+                                            </a>
                                         </Card>
                                     </Col>
                                     <Col xxl={0} xl={0} lg={3} xs={1} md={3} sm={3} />

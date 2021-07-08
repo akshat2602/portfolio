@@ -1,4 +1,4 @@
-import { Layout, Row, Col, Typography, BackTop, Tooltip } from 'antd';
+import { Layout, Row, Col, Typography, BackTop, Tooltip, Button } from 'antd';
 import { GithubIcon, LinkedinIcon, EmailIcon, InstaIcon, GoUpIcon } from '../../Assets/Svg';
 
 const { Content, Footer } = Layout;
@@ -51,45 +51,22 @@ export const Contact = () => {
                                 <div>
                                     <br />
                                     <br />
-                                    <a data-aos="zoom-out"
+                                    <Button data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once
-                                        target="blank"
-                                        rel="noreferrer"
-                                        className='logos'
-                                        href="https://www.github.com/akshat2602">
-                                        <GithubIcon />
-                                    </a>
-                                    <a data-aos="zoom-out"
+                                        href="https://www.github.com/akshat2602" style={{ backgroundColor: '#282a36', borderWidth: 0 }} type="primary" icon={<GithubIcon />} />
+                                    <Button data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once
-                                        target="blank"
-                                        rel="noreferrer"
-                                        className='logos'
-                                        style={{ marginLeft: '8%' }}
-                                        href="https://www.linkedin.com/in/akshat-sharma-2602/">
-                                        <LinkedinIcon />
-                                    </a>
-                                    <a data-aos="zoom-out"
+                                        href="https://www.linkedin.com/in/akshat-sharma-2602/" style={{ backgroundColor: '#282a36', borderWidth: 0, marginLeft: '10%' }} type="primary" icon={<LinkedinIcon />} />
+                                    <Button data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once
-                                        target="blank"
-                                        rel="noreferrer"
-                                        className='logos'
-                                        style={{ marginLeft: '8%' }}
-                                        href="mailto:akshatsharma2602@gmail.com">
-                                        <EmailIcon />
-                                    </a>
-                                    <a data-aos="zoom-out"
+                                        href="mailto:akshatsharma2602@gmail.com" style={{ backgroundColor: '#282a36', borderWidth: 0, marginLeft: '10%' }} type="primary" icon={<EmailIcon />} />
+                                    <Button data-aos="zoom-out"
                                         data-aos-delay="200"
                                         data-aos-once
-                                        target="blank"
-                                        rel="noreferrer"
-                                        className='logos'
-                                        style={{ marginLeft: '8%' }}
-                                        href="https://www.instagram.com/_.st3llar._/">
-                                        <InstaIcon />
-                                    </a>
+                                        href="https://www.instagram.com/_.st3llar._/" style={{ backgroundColor: '#282a36', borderWidth: 0, marginLeft: '10%' }} type="primary" icon={<InstaIcon />} />
                                 </div>
                             </Col>
                             <Col xxl={6} xl={6} lg={4} xs={3} md={3} sm={3} />
