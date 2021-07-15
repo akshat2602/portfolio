@@ -37,7 +37,7 @@ export const Navbar = () => {
                 <Menu.Item className="nav-items" key={'projects'} icon={<ProjectIcon2 />} ><a href="#projects">Projects</a></Menu.Item>
                 <Menu.Item className="nav-items" key={'contact'} icon={<ContactIcon />} ><a href="#contact">Contact Me</a></Menu.Item>
                 <Menu.Item className="nav-items" key={'contact'} icon={<ResumeIcon />} ><a target="blank"
-                  rel="noreferrer" href="https://drive.google.com/file/d/1WnL9Z1e02qXYXO58-rZUT7E_i-xsSg5e/view?usp=sharing">Resume</a></Menu.Item>
+                  rel="noreferrer" href="https://drive.google.com/file/d/1lkD0u1Vy4AMASUi0e-BzRysFoq3aDAsr/view?usp=sharing">Resume</a></Menu.Item>
               </Menu>
             </Col>
             <Col xxl={2} xl={2} lg={2} xs={0} md={2} sm={1} />
